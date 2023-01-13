@@ -104,7 +104,7 @@ async function updateGist(data) {
   };
 
   let totalDistance = 0;
-
+  const year = new Date().getFullYear;
   let lines = Object.keys(keyMappings).map(activityType => {
     // Store the activity name and distance
     const { key } = keyMappings[activityType];
@@ -139,7 +139,7 @@ async function updateGist(data) {
     // Format the data to be displayed in the Gist
     // const { name, distance, pace, barChart } = activity;
     const { name, distance } = activity;
-    return new Date().getFullYear `${name.padEnd(10)} ${distance.padStart(
+    return `${year} ${name.padEnd(10)} ${distance.padStart(
       13
     )}`;
   });
