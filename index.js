@@ -104,7 +104,7 @@ async function updateGist(data) {
   };
 
   let totalDistance = 0;
-  const year = new Date().getFullYear;
+  var year = new Date().Format("yyyy");
   let lines = Object.keys(keyMappings).map(activityType => {
     // Store the activity name and distance
     const { key } = keyMappings[activityType];
