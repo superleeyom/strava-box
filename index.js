@@ -139,7 +139,7 @@ async function updateGist(data) {
     // const { name, distance, pace, barChart } = activity;
     var currenYear = new Date().getFullYear().toString();
     const { name, distance } = activity;
-    return `${currenYear} ${name.padEnd(10)} ${distance.padStart(
+    return `${currenYear + ' ' +name.padEnd(10)} ${distance.padStart(
       13
     )}`;
   });
