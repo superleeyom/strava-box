@@ -138,7 +138,7 @@ async function updateGist(data) {
     // Format the data to be displayed in the Gist
     // const { name, distance, pace, barChart } = activity;
     var currenYear = new Date().getFullYear;
-    const { name, distance,currenYear } = activity;
+    const { name, distance } = activity;
     return `${currenYear} ${name.padEnd(10)} ${distance.padStart(
       13
     )}`;
