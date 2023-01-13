@@ -157,7 +157,7 @@ async function updateGist(data) {
   }
   lines.push(
     `Last month ${
-      formatDistance(monthDistance).padStart(13)
+      formatDistance(monthDistance).padStart(17)
     }`
   );
 
