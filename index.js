@@ -141,7 +141,7 @@ async function updateGist(data) {
     const { name, distance, barChart } = activity;
     return `${name.padEnd(10)} ${distance.padStart(
       13
-    )} ${barChart} ${pace.padStart(7)}`;
+    )} ${barChart}`;
   });
 
   // Last 4 weeks
