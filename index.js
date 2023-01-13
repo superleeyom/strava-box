@@ -138,10 +138,10 @@ async function updateGist(data) {
   }).map(activity => {
     // Format the data to be displayed in the Gist
     // const { name, distance, pace, barChart } = activity;
-    const { name, distance, barChart } = activity;
+    const { name, distance } = activity;
     return `${name.padEnd(10)} ${distance.padStart(
       13
-    )} ${barChart}`;
+    )}`;
   });
 
   // Last 4 weeks
