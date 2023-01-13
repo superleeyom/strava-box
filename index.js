@@ -137,9 +137,9 @@ async function updateGist(data) {
   }).map(activity => {
     // Format the data to be displayed in the Gist
     // const { name, distance, pace, barChart } = activity;
-    var year = new Date().getFullYear;
-    const { name, distance,year } = activity;
-    return `${year} ${name.padEnd(10)} ${distance.padStart(
+    var currenYear = new Date().getFullYear;
+    const { name, distance,currenYear } = activity;
+    return `${currenYear} ${name.padEnd(10)} ${distance.padStart(
       13
     )}`;
   });
